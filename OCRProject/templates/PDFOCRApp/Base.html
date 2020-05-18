@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+{% get_media_prefix as MEDIA_URL %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PDFOCROnline</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Bootstrap JQuery -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- App Specific CSS -->
+    <link rel="stylesheet" href="{% static "PDFOCRApp/CSS/PDFOCRApp.css" %}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body class="main_body_class">
+    <br>
+    <div class="container navigation_bar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mynavbar">
+        <div class="navbar-nav">
+          <a class="nav-link" href="{% url 'HomePageView' %}">Home</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container site_content">
+      {% block independent_content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

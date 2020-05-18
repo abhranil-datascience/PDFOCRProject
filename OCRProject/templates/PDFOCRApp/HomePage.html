@@ -1,0 +1,18 @@
+{% extends 'PDFOCRApp/Base.html' %}
+{% block independent_content %}
+<br>
+<div class="jumbotron home_page_jumbotron">
+  <div class="Header">
+    <h3>Sample PDF File</h3>
+  </div><br>
+  <object data="../../media/PDFFiles/InputFiles/GeorgiaCertificate.pdf" type="application/pdf" class="PDFDisplay">
+    <p>Your browser isn't supporting embedded pdf files.You can download the file <a href="../../media/PDFFiles/InputFiles/GeorgiaCertificate.pdf">here</a>.</p>
+  </object>
+  <br>
+  <br>
+  <div class="ButtonArea">
+    <a class="btn btn-info OCRButton" href="{% url 'OCRConversionView' %}" role="button"  style="float:right">Run OCR</a>
+    <a class="btn btn-info" href="../../media/PDFFiles/InputFiles/GeorgiaCertificate.pdf" style="float:right">Download PDF</a>
+  </div>
+</div>
+{% endblock %}

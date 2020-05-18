@@ -1,0 +1,19 @@
+{% extends 'PDFOCRApp/Base.html' %}
+{% block independent_content %}
+<br>
+<div class="jumbotron home_page_jumbotron">
+  <div class="Header">
+    <h3>Converted Text File</h3>
+  </div><br>
+  <object data="../../media/PDFFiles/OutputFiles/GeorgiaCertificate.txt" type="text/html" class="TextDisplay">
+    <p>Your browser isn't supporting embedded text files.You can download the file
+      <a href="../../media/PDFFiles/OutputFiles/GeorgiaCertificate.txt">here</a>.
+    </p>
+  </object>
+  <br>
+  <br>
+  <div class="ButtonArea">
+    <a class="btn btn-info" href="../../media/PDFFiles/OutputFiles/GeorgiaCertificate.txt" style="float:right">Download File</a>
+  </div>
+</div>
+{% endblock %}

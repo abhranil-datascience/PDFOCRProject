@@ -1,0 +1,21 @@
+.main_body_class{
+  background-image: url('/static/PDFOCRApp/Images/BodyBackgroundImage.jpg');
+}
+.PDFDisplay,.TextDisplay{
+  width:100%;
+  height: 70%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Header{
+  padding-left: 5%;
+  font-family: 'Lora', serif;
+  text-decoration: underline;
+}
+.home_page_jumbotron{
+  height:550px;
+}
+.OCRButton{
+  margin-right: 5%;
+  margin-left: 2px;
+}
